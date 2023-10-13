@@ -1,0 +1,77 @@
+input[type=range]{
+  -webkit-appearance: none;
+  margin: 2px 0;
+  width: 100%;
+}
+input[type=range]:focus{
+  outline: none;
+}
+/* Ukuran Panjang slider */
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  /* animate: 0.2s; */
+  background: rgba(217,217,217,1);
+  border-color: black;
+  border-radius: 25px;
+}
+/* bulatan slider */
+input[type=range]::-webkit-slider-thumb {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  background: rgb(255, 0, 0);
+  box-shadow: 0 0 4px 0 rgba(0,0,0, 1);
+  cursor: pointer;
+  -webkit-appearance: none;
+  /* Posisi Bulatan Pada Slider */
+  margin-top: -23px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #939393;
+}
+/*Panjang Slider Bar*/
+.range-wrap{
+  width: 762px;
+  height: 20px;
+  position: relative;
+}
+.range-value{
+  position: absolute;
+  top: -50%;
+}
+/* Penunjuk slider */
+.range-value span{
+  width: 80px;
+  height: 64px;
+  line-height: 62px;
+  text-align: center;
+  background: rgba(217,217,217,1);
+  box-shadow: 1px 1px 10px rgba(255, 0, 0, 0.405);
+  color: #000000;
+  font-size: 40px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  margin-top: -50px;
+}
+/* Penunjuk Slider Atas */
+.range-value span:before{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 10px solid rgba(217,217,217,1);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: 0px;
+}
+*{
+  font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,120 @@
+.keyboard-blackout-background{
+    position:fixed;z-index:1;
+    top:0;
+    left:0;
+    margin-top: 1375px;
+    margin-left: 800px;
+    width:2240px;
+    height:755px;
+    background-color:rgba(25,25,25,1);
+    box-shadow: 0px 0px 15px 5px rgba(25,25,25,1);
+}
+.keyboard-wrapper{
+    font-family:'Montserrat',sans-serif;
+    font-size:46px;
+    line-height:18px;
+    position:fixed;
+    z-index:2;
+    width:2200px;
+    min-width:1500px;
+    max-width:2200px;
+    color:#292929
+}
+.keyboard-wrapper .keyboard-action-wrapper{
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+    width:100%;
+}
+.keyboard-wrapper .keyboard-action-button{
+    font-family:'Montserrat',sans-serif;
+    font-size:inherit;
+    display:inline;
+    /* Tombol accept dan cancel */
+    width:15%;
+    height:100px;
+    margin:0 5px;
+    padding:0;
+    cursor:pointer;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    outline:none
+}
+.keyboard-wrapper .keyboard-cancel-button{
+    background-color:#e74c3c;
+}
+.keyboard-wrapper .keyboard-accept-button{
+    background-color:#2ecc71;
+}
+/* Input Text  */
+.keyboard-wrapper .keyboard-input-field{
+    box-sizing:content-box;
+    width:67%;
+    height:100px;
+    padding-right:10px;
+    padding-left:10px;
+    color:inherit;
+    border:1px solid #555;
+    border-radius:10px;
+    outline:none
+}
+.keyboard-row,.keyboard-wrapper .keyboard-input-field{
+    font-family:'Montserrat',sans-serif;
+    font-size:inherit;
+    line-height:inherit
+}
+/* Keyboard A,B,C */
+.keyboard-row{
+    width:2200px;
+    height:100px;
+    margin:20px 0;
+}
+.keyboard-key{
+    font-family:'Montserrat',sans-serif;
+    font-size:inherit;
+    line-height:inherit;
+    display:inline-block;
+    height:100%;
+    margin:0 5px;
+    padding:0;
+    cursor:pointer;
+    vertical-align:middle;
+    color:inherit;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    background-color:#e0e0e0
+}
+.keyboard-key:focus{
+    outline:none
+}
+.caps-lock-key{
+    position:relative
+}
+.caps-lock-key:before{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:7px;
+    height:7px;
+    content:"";
+    transition:background-color .05s ease-in-out;
+    border:1px solid #bdbdbd;
+    border-radius:50%;
+    background-color:transparent
+}
+.caps-lock-key-active:before{
+    background-color:#00ff6a;
+}
+.language-button{
+    overflow:hidden;
+    padding:0 10px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}

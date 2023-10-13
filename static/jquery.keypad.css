@@ -1,0 +1,18 @@
+.keypad  button {
+    margin: 1%;
+    width: 31%;
+    height: 23%;
+    background: #a1a1a1;
+    border: 2px solid #a1a1a1;
+    color: white;
+    border-radius: 50%;
+    font-size: 120px;
+}
+
+.keypad  button.delete{
+    font-size: 100px;
+}
+.keypad  button.submit {
+    background: #a1a1a1;
+    color: white;
+}
