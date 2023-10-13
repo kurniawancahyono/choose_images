@@ -3,12 +3,16 @@
 <head>
     <title>
         Store Report
+        <!-- Masukkan Bootstrap nya dulu -->
     </title>
 </head>
 <body>
-    {{first_event}} to {{second_event}}
-    {% for hist in hists %}
-    <img src="{{url_for('static', filename=hist)}}" alt="{{hist}}">
-    {% endfor %}
+    <div class="row">
+        {% for hist in hists %}
+        <div class="col-3">
+            <img style="height: 200px;" src="{{url_for('static', filename=hist)}}" alt="{{hist}}">
+        </div>
+        {% endfor %}
+    </div>
 </body>
 </html>
